@@ -1,3 +1,10 @@
+" ========================
+" Atalhos para Compilação
+" ========================
+" Compilar código C usando gcc
+autocmd FileType c nmap <F6> :w<CR>:!gcc % -o %< && ./%<<CR>
+
+" Compilar código Python utilizando python3 
 nnoremap <F5> :w<CR>: !python3 %<CR>
 
 
@@ -13,6 +20,8 @@ set encoding=utf-8          " Define codificação UTF-8
 set scrolloff=8             " Mantém 8 linhas visíveis ao rolar
 set wrap
 set showmatch               " Destaca parênteses, chaves e colchetes correspondentes
+set shiftwidth=4            " Indentação com 4 espaços
+
 
 " === Interface ===
 syntax on                   " Habilita realce de sintaxe

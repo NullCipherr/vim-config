@@ -1,38 +1,127 @@
-# Configurações do Vim
+Aqui está o conteúdo completo para o arquivo `README.md`, com todos os tópicos e configurações em um único arquivo para você copiar e colar diretamente:
 
-Este repositório contém um conjunto de configurações para o editor de texto Vim, com foco em otimização de compilação para código C e Python, além de várias melhorias de desempenho e interface. Essas configurações proporcionam uma experiência mais eficiente ao programar e compilar código diretamente no Vim.
+```markdown
+# Vim Configuration for Compilation and Performance
 
-## Instalação
+This repository contains a set of custom configurations for the Vim text editor, focused on optimization for compiling C and Python code. In addition to efficient compilation shortcuts, it includes improvements to the user interface, performance settings, and best practices for a more productive development environment. Ideal for programmers who want to use Vim more quickly and efficiently, with support for syntax highlighting, line numbers, compilation shortcuts, and optimized performance configurations.
 
-Para utilizar essas configurações, você precisa ter o Vim instalado. Caso ainda não tenha o Vim instalado, siga as instruções abaixo:
+## Installation
 
-1. **Instalar o Vim** (caso ainda não tenha instalado):
-   - No Ubuntu/Debian:
+To use these configurations, you need to have Vim installed. If you don't have Vim installed yet, follow the instructions below:
+
+1. **Install Vim** (if not installed):
+   - On Ubuntu/Debian:
      ```bash
      sudo apt install vim
      ```
 
-2. **Configurar o Vim**:
-   - Clone este repositório e copie o arquivo `~/.vimrc` para o diretório home:
+2. **Set up Vim**:
+   - Clone this repository and copy the `~/.vimrc` file to your home directory:
      ```bash
      cp ~/.vimrc /path/to/repo/.vimrc
      ```
 
-3. **Reinicie o Vim** para aplicar as configurações.
+3. **Restart Vim** to apply the configurations.
 
-## Configurações de Atalhos e Comandos
+## Key Bindings and Commands
 
-### Atalhos de Compilação
+### Compilation Shortcuts
 
-- **Compilar Código C com `gcc`**: Ao pressionar `F6`, o código C será salvo e compilado com `gcc`, gerando o arquivo executável com o mesmo nome do arquivo original. O comando também executa o programa compilado automaticamente.
-  - Atalho: `F6`
+- **Compile C Code with `gcc`**: Press `F6` to save and compile the C code with `gcc`, generating an executable with the same name as the source file. The command also runs the compiled program.
+  - Shortcut: `F6`
+  - Command:
+    ```vim
+    :w<CR>:!gcc % -o %< && ./%<<CR>
+    ```
 
-- **Compilar Código Python com `python3`**: Ao pressionar `F5`, o código Python será salvo e executado com `python3`.
-  - Atalho: `F5`
+- **Compile Python Code with `python3`**: Press `F5` to save and run the Python code with `python3`.
+  - Shortcut: `F5`
+  - Command:
+    ```vim
+    :w<CR>:!python3 %<CR>
+    ```
 
-### Configurações Básicas
+### Basic Settings
 
-- **Desativar compatibilidade com Vi**: Desativa o modo compatível com o editor Vi, para melhorar a experiência no Vim.
+- **Disable Vi Compatibility**: Disables Vi-compatible mode to improve the Vim experience.
   ```vim
   set nocompatible
   ```
+- **Show Line Numbers**:
+  ```vim
+  set number
+  set relativenumber
+  ```
+- **Highlight the Current Line**:
+  ```vim
+  set cursorline
+  ```
+- **Tab and Spacing Settings**:
+  ```vim
+  set tabstop=4
+  set shiftwidth=4
+  ```
+- **Enable Mouse and System Clipboard**:
+  ```vim
+  set mouse=a
+  set clipboard=unnamedplus
+  ```
+- **Encoding and Scrolling**:
+  ```vim
+  set encoding=utf-8
+  set scrolloff=8
+  set wrap
+  ```
+
+### Interface
+
+- **Enable Syntax Highlighting**:
+  ```vim
+  syntax on
+  ```
+- **Color Theme and Settings**:
+  ```vim
+  set termguicolors
+  colorscheme koehler
+  ```
+- **Show Status Bar and Cursor Position**:
+  ```vim
+  set laststatus=2
+  set ruler
+  ```
+- **Autocomplete Interface**:
+  ```vim
+  set wildmenu
+  ```
+- **Show Sign Column (LSP Diagnostics)**:
+  ```vim
+  set signcolumn=yes
+  ```
+
+### Performance
+
+- **Performance Optimizations**:
+  - Prevents screen redraw during intensive commands.
+    ```vim
+    set lazyredraw
+    ```
+  - Configures time to activate shortcuts:
+    ```vim
+    set timeoutlen=500
+    ```
+  - Reduces time to trigger events:
+    ```vim
+    set updatetime=300
+    ```
+
+## Contributing
+
+If you have suggestions or improvements for these configurations, feel free to open a pull request!
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+```
+
+Agora você pode copiar o conteúdo completo de uma vez só para o seu arquivo `README.md`.

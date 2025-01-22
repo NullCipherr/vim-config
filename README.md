@@ -26,17 +26,9 @@ Para utilizar essas configurações, você precisa ter o Vim instalado. Caso ain
 
 - **Compilar Código C com `gcc`**: Ao pressionar `F6`, o código C será salvo e compilado com `gcc`, gerando o arquivo executável com o mesmo nome do arquivo original. O comando também executa o programa compilado automaticamente.
   - Atalho: `F6`
-  - Comando:
-    ```vim
-    :w<CR>:!gcc % -o %< && ./%<<CR>
-    ```
 
 - **Compilar Código Python com `python3`**: Ao pressionar `F5`, o código Python será salvo e executado com `python3`.
   - Atalho: `F5`
-  - Comando:
-    ```vim
-    :w<CR>:!python3 %<CR>
-    ```
 
 ### Configurações Básicas
 

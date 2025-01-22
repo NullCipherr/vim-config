@@ -1,4 +1,4 @@
-# Configurações do Vim para Compilação e Performance
+# Configurações do Vim
 
 Este repositório contém um conjunto de configurações para o editor de texto Vim, com foco em otimização de compilação para código C e Python, além de várias melhorias de desempenho e interface. Essas configurações proporcionam uma experiência mais eficiente ao programar e compilar código diretamente no Vim.
 

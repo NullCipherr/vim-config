@@ -112,5 +112,3 @@ If you have suggestions or improvements for these configurations, feel free to o
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ```
-
-Agora você pode copiar o conteúdo completo de uma vez só para o seu arquivo `README.md`.

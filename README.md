@@ -26,17 +26,9 @@ To use these configurations, you need to have Vim installed. If you don't have V
 
 - **Compile C Code with `gcc`**: Press `F6` to save and compile the C code with `gcc`, generating an executable with the same name as the source file. The command also runs the compiled program.
   - Shortcut: `F6`
-  - Command:
-    ```vim
-    :w<CR>:!gcc % -o %< && ./%<<CR>
-    ```
 
 - **Compile Python Code with `python3`**: Press `F5` to save and run the Python code with `python3`.
   - Shortcut: `F5`
-  - Command:
-    ```vim
-    :w<CR>:!python3 %<CR>
-    ```
 
 ### Basic Settings
 

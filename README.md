@@ -1,7 +1,4 @@
-Aqui está o conteúdo completo para o arquivo `README.md`, com todos os tópicos e configurações em um único arquivo para você copiar e colar diretamente:
-
-```markdown
-# Vim Configuration for Compilation and Performance
+# Vim Configuration
 
 This repository contains a set of custom configurations for the Vim text editor, focused on optimization for compiling C and Python code. In addition to efficient compilation shortcuts, it includes improvements to the user interface, performance settings, and best practices for a more productive development environment. Ideal for programmers who want to use Vim more quickly and efficiently, with support for syntax highlighting, line numbers, compilation shortcuts, and optimized performance configurations.
 
